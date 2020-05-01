@@ -1,0 +1,57 @@
+/*******************************************
+    BASE STYLES
+*******************************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    --headerOne: calc(2rem + 1vw);
+    --headerTwo: calc(2.4rem + 1vw);
+    --headerThree: calc(3rem + 1vw);
+    --headerFour: calc(3.5rem + 1vw);
+    --text: calc(1.5rem + 1vw);
+    --headerFour: calc(2rem + 1vw);
+
+    --color-primary: #261717;
+    --color-special: #D9A3A3;
+}
+
+body {
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+h1 {
+    font-size: var(--headerOne);
+    font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+    font-size: var(--headerTwo);
+}
+
+h3 {
+    font-size: var(--headerThree);
+}
+
+li,
+button,
+label,
+input,
+p {
+    font-size: var(--text);
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
