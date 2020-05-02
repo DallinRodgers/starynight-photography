@@ -37,16 +37,22 @@ h3 {
     font-size: var(--headerThree);
 }
 
+ul {
+    list-style-type: none;
+}
+
 li,
 button,
 label,
 input,
+a,
 p {
     font-size: var(--text);
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .flex {
@@ -54,4 +60,47 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/*******************************************
+    NAV STYLES
+*******************************************/
+.main-head {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height:  10vh;
+    padding: 2rem 0;
+}
+
+#logo {
+    flex: 1 1 20rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 20rem;
+}
+
+.hero {
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-intro {
+    flex: 2 1 30rem;
+
+}
+
+.hero-imgs {
+    flex: 1 1 20rem;
 }
