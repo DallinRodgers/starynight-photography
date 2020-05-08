@@ -95,7 +95,9 @@ nav {
 .burger {
   display: none;
 }
-
+/*******************************************
+    HERO STYLES
+*******************************************/
 .hero {
   min-height: 90vh;
   width: 95%;
@@ -140,6 +142,7 @@ nav {
   animation: plant-intro 1.5s ease-in-out forwards,
     plant-shake 2.5s infinite ease-in-out alternate-reverse 2s;
   transform-origin: bottom;
+  max-height: 70%;
 }
 .plant2 {
   left: 40%;
@@ -175,7 +178,23 @@ nav {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
+  .hero {
+    width: 100%;
+  }
+  .hero-intro p {
+    padding: 3rem;
+  }
+  .plant {
+    left: -10%;
+    max-height: 60%;
+  }
+  .plant2 {
+    left: 50%;
+  }
+  /*******************************************
+    BURGER STYLES
+  *******************************************/
   .menu-check,
   .burger {
     display: block;
