@@ -22,6 +22,7 @@ html {
   --color-special: #d9a3a3;
   --color-background: #272727;
   --color-background-opacity: #272727e3;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Frank Ruhl Libre", serif;
@@ -408,12 +409,10 @@ footer ul {
   /*******************************************
     BURGER STYLES
   *******************************************/
-  .menu-check,
   .burger {
     display: block;
-  }
-  .burger {
     position: relative;
+    cursor: pointer;
   }
   .nav-links a {
     color: white;
@@ -443,31 +442,19 @@ footer ul {
   .burger span:nth-child(3) {
     transform-origin: center;
   }
-  .menu-check {
-    position: absolute;
-    top: 50%;
-    right: 0.5%;
-    transform: translate(5%, -50%);
-    width: 5rem;
-    height: 5rem;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 100;
-  }
 
-  .menu-check:checked + .nav-links {
+  .nav-open {
     transform: translate(-100%);
   }
-  .menu-check:checked ~ .burger span {
+  .toggle .line1 {
+    transform: rotateZ(405deg) translateY(200%) translateX(20%);
     background: white;
   }
-  .menu-check:checked ~ .burger span:nth-child(1) {
-    transform: rotateZ(405deg) translateY(200%) translateX(20%);
-  }
-  .menu-check:checked ~ .burger span:nth-child(2) {
+  .toggle .line2 {
     opacity: 0;
   }
-  .menu-check:checked ~ .burger span:nth-child(3) {
+  .toggle .line3 {
     transform: rotateZ(-405deg) translateY(-120%) translateX(10%);
+    background: white;
   }
 }
