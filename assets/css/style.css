@@ -239,6 +239,7 @@ nav {
   display: grid;
   min-height: 100vh;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 .gallery img {
   width: 100%;
